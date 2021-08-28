@@ -1,0 +1,101 @@
+*
+{
+	margin: 0;
+	padding: 0;
+
+}
+
+header{
+    height: 125px;
+	
+}
+
+.main-nav{
+	position: relative;
+	z-index: 1;
+	float : right;
+	list-style: none;
+	margin-top : 50px;
+	
+
+}
+
+.main-nav li{
+	display: inline-block;
+
+}
+
+.main-nav li a{
+	color: black;
+	text-decoration: none;
+	padding: 7px 20px ;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	text-align: center;
+	 padding-right: 5px;
+	 padding-right: 0px;
+	 font-weight: bold;
+
+
+}
+
+
+.logo img{
+	width: auto;
+	position: absolute;
+  	top: 8px;
+  	left: 16px;
+  	height: 100px;
+}
+
+body{
+    margin:0px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 115vh;
+    background: rgb(34,193,195);
+	background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,253,155,1) 100%);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+
+
+}
+
+.row{
+	max-width: 1200px;
+	margin: auto;
+
+}
+
+
+.Image img{
+	width: auto;
+	position: absolute;
+  	top: 170px;
+  	left: 50px;
+  	height: 25%;
+
+}
+
+.column {
+  float: left;
+  width: 32%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+h1 {
+	color: black;
+	font-size: 30px;
+	padding: 60px 0;
+	text-align: left;
+	margin-left : 50px; 
+	margin-top: 50px;

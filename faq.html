@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>FAQ</title>
+		<link href = "help.css"  rel = "stylesheet"  type = "text/css">
+		<style>
+        /*FAQS*/
+        
+        .faq_question {
+            margin: 0px;
+            
+            display: inline-block;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        
+        .faq_answer_container {
+            display: none;
+        }
+    </style>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $('.faq_question').click(function() {
+
+                if ($(this).parent().is('.open')) {
+                    $(this).closest('.faq').find('.faq_answer_container').slideUp();
+                    $(this).closest('.faq').removeClass('open');
+                } else {
+                    $('.faq_answer_container').slideUp();
+                    $('.faq').removeClass('open');
+                    $(this).closest('.faq').find('.faq_answer_container').slideDown();
+                    $(this).closest('.faq').addClass('open');
+                }
+
+            });
+        });
+    </script>
+</head>
+<body>
+		<header>
+			<div class = "row">
+				<div class = "logo">
+					<img src = "logo.png"  align= "left">
+				</div>
+				<ul class = "main-nav">
+					<li> <a href = "index.html"> HOME </a></li>
+					<li> <a href = "contact.html"> EMERGENCY CONTACT </a></li>
+					<li> <a href = "shop.html"> SHOP </a></li>
+					<li> <a href = "register.html"> REGISTER </a></li>
+					<li> <a href = "login.html"> LOGIN </a></li>
+
+				</ul>
+			</div>
+		</header>
+			<br><br>
+		<h1 >FAQ's</h1>
+	<br><br>
+
+	<div class="faq_container">
+        <div class="faq">
+            <div class="faq_question open" style="font-size:28px">Can I still get COVID-19 if I have been fully vaccinated?</div>
+            <div class="faq_answer_container" style="display: block;" >
+                <div class="faq_answer" >The COVID-19 vaccines available in Australia are very effective. Clinical trials and real world evidence have found that the vaccines are 70% to 95% effective in preventing people from getting sick with COVID-19. This means that people who are fully vaccinated are 70% to 95% less likely to get sick with COVID-19 compared with those who are not vaccinated, if they are exposed to the virus. However, a small proportion of fully vaccinated people may still get the disease. This does not mean the vaccines are not working. There are no vaccines, for any disease, that are 100% effective.
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="faq">
+            <div class="faq_question" style="font-size:28px">How many people have been vaccinated in Australia?</div>
+            <div class="faq_answer_container">
+                <div class="faq_answer">As of 21 August 2021, 17 million vaccine doses have been administered in Australia. Of which over 10.7 million people have had at least one dose over 6.1 million people are fully vaccinated 30% of people over the age of 16 years are fully vaccinated. </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="faq">
+            <div class="faq_question" style="font-size:28px">Who can get COVID-19 vaccine?</div>
+            <div class="faq_answer_container">
+                <div class="faq_answer" >COVID-19 vaccine is currently recommended for all people aged 16 years and over, and for the following groups: 
+			Children aged 12-15 years with specified medical conditions that increase their risk of severe COVID-19 
+			Aboriginal and Torres Strait Islander children aged 12-15 years
+			All children aged 12-15 in remote communities, as part of broader community outreach vaccination programs.
+ 
+			Some states and territories will amend their eligibility based on their COVID-19 situation, vaccine supply and uptake. Please stay up to date with information from your local state or territory department of health. The COVID-19 vaccine eligibility checker is available to find out when and where you can receive a COVID-19 vaccine. </div>
+            </div>
+        </div><br><br>
+          <div class="faq">
+            <div class="faq_question" style="font-size:28px">Is COVID-19 vaccine mandatory?</div>
+            <div class="faq_answer_container">
+                <div class="faq_answer">Residential aged care workers are mandated to have at least one dose by mid-September 2021 as a condition of working in a residential aged care facility.For all other Australians, COVID-19 vaccination currently is not mandatory and individuals may choose not to vaccinate. </div>
+            </div>
+            </div><br><br>
+          <div class="faq">
+            <div class="faq_question" style="font-size:28px">Which COVID-19 vaccines are used in other countries?</div>
+            <div class="faq_answer_container">
+                <div class="faq_answer" >As of 21 August 2021, over 4.93 billion doses of a COVID-19 vaccine have been given to people worldwide, the most common vaccines used to date are:
+                <br>AstraZeneca viral vector vaccine (183 countries)
+                <br>Comirnaty (Pfizer) 
+                <br>an mRNA vaccine (115 countries)
+				<br>Moderna mRNA vaccine (68 countries)
+				<br>Beijing/Sinopharm inactivated vaccine (67 countries)
+				<br>Gamaleya viral vector vaccine (50 countries)
+				<br>Sinovacinactivated vaccine (39 countries)
+				<br>Janssen/Johnson & Johnson vaccine (45 countries)
+				<br>Several other vaccines have been approved and are being used in other countries.</div>
+            </div>
+
+        </div><br><br>
+          <div class="faq">
+            <div class="faq_question" style="font-size:28px">What happens if you are late or missed the second dose of vaccine?</div>
+            <div class="faq_answer_container">
+                <div class="faq_answer">If the second dose of either the Pfizer vaccine or the AstraZeneca vaccine is overdue (i.e. past the recommended interval), it should be given as soon as possible. A single dose likely only gives provide short-term protection. The second dose will be effective regardless of how late it is given. Even if the second dose is late, no vaccine doses need to be repeated.</div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    </div>
+    </div>
+    <br><br>
+ 
+    <br>
+    <br>
+    <br>
+    
+	
+</body>
+</html>
